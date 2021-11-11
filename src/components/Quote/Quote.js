@@ -7,7 +7,7 @@ const Quote = () => {
   const {
     wpPage: { ACF_HomePage: data },
   } = useQuoteQuery()
-  console.log(data)
+  // console.log(data)
 
   return (
     <Wrapper>
