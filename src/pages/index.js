@@ -1,15 +1,22 @@
 import * as React from "react"
+import CTAArea from "../components/CTAArea/CTAArea"
+import Hero from "../components/Hero/Hero"
+import LatestBlogPost from "../components/LatestBlogPost/LatestBlogPost"
 // import { Link } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
-// import Layout from "../components/layout"
+import Layout from "../components/Layout/Layout"
+import Quote from "../components/Quote/Quote"
 import Seo from "../components/SEO/SEO"
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <Seo title="Home" />
-    <p>Start Here!</p>
-  </div>
+    <Hero />
+    <CTAArea />
+    <LatestBlogPost />
+    <Quote />
+  </Layout>
 )
 
 export default IndexPage
