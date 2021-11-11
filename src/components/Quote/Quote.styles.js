@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components"
 
 export const Wrapper = styled.div`
   background: #4d4d4d;
@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
     max-width: 40px;
     margin: 20px auto 40px auto;
   }
-`;
+`
 
 export const Content = styled.div`
   max-width: 1080px;
@@ -26,4 +26,12 @@ export const Content = styled.div`
       font-size: 1.5rem;
     }
   }
-`;
+`
+
+export const QuoteHover = styled.img`
+  transition: 0.8s ease-in-out;
+
+  :hover {
+    transform: scale(1.3);
+  }
+`
