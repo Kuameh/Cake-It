@@ -5,6 +5,7 @@ import styled from "styled-components"
 import Layout from "../components/Layout/Layout"
 import PageHero from "../components/PageHero/PageHero"
 import { getImage } from "gatsby-plugin-image"
+import BreadCrumb from "../components/BreadCrumb/BreadCrumb"
 
 const Wrapper = styled.div`
   max-width: 1180px;
@@ -29,9 +30,9 @@ const PageTemplate = ({ data }) => {
 
   return (
     <Layout>
-      {console.log(data)}
-      <PageHero image={imageData} />
+      {data.wpPage.featuredImage ? <PageHero image={imageData} /> : null}
       <Wrapper>
+        <BreadCrumb parent=
         <p>Sidebar</p>
         <p>Content</p>
       </Wrapper>
